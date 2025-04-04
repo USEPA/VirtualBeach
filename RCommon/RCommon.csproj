@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{321C3EE6-AE0F-46B7-B6DC-AE3EF7DAC9C0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RCommon</RootNamespace>
+    <AssemblyName>RCommon</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Debug\RCommon.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>true</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>true</CodeAnalysisIgnoreBuiltInRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <CodeAnalysisLogFile>bin\Release\RCommon.dll.CodeAnalysisLog.xml</CodeAnalysisLogFile>
+    <CodeAnalysisUseTypeNameInSuppression>true</CodeAnalysisUseTypeNameInSuppression>
+    <CodeAnalysisModuleSuppressionsFile>GlobalSuppressions.cs</CodeAnalysisModuleSuppressionsFile>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRuleSetDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\\Rule Sets</CodeAnalysisRuleSetDirectories>
+    <CodeAnalysisIgnoreBuiltInRuleSets>false</CodeAnalysisIgnoreBuiltInRuleSets>
+    <CodeAnalysisRuleDirectories>;C:\Program Files\Microsoft Visual Studio 10.0\Team Tools\Static Analysis Tools\FxCop\\Rules</CodeAnalysisRuleDirectories>
+    <CodeAnalysisIgnoreBuiltInRules>false</CodeAnalysisIgnoreBuiltInRules>
+    <CodeAnalysisFailOnMissingRules>false</CodeAnalysisFailOnMissingRules>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotSpatial.Controls">
+      <HintPath>..\Externals\DotSpatial\DotSpatial.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="DotSpatial.Extensions">
+      <HintPath>..\Externals\DotSpatial\DotSpatial.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\Externals\Json.NET\Net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RDotNet">
+      <HintPath>..\Externals\R\RDotNet.dll</HintPath>
+    </Reference>
+    <Reference Include="RDotNet.NativeLibrary">
+      <HintPath>..\Externals\R\RDotNet.NativeLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\Externals\WeifenLuo.WinformsUI.Docking\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph">
+      <HintPath>..\Externals\Zedgraph\zedgraph_dll_v515\ZedGraph.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="RControllerInterface.cs" />
+    <Compile Include="RInterface.cs" />
+    <Compile Include="RModelingEvents.cs" />
+    <Compile Include="RModelingGui.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RModelingGui.Designer.cs">
+      <DependentUpon>RModelingGui.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RModelingPlugin.cs" />
+    <Compile Include="RModelInterface.cs" />
+    <Compile Include="utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RModelingGui.resx">
+      <DependentUpon>RModelingGui.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EPAComputeAO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EPAmanipulate.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\EPAtransform.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\GoToPrediction.png" />
+    <Content Include="Resources\redX.png" />
+    <Content Include="Resources\Remove.png" />
+    <Content Include="Resources\running_process.png" />
+    <Content Include="Resources\Test.png" />
+    <None Include="Resources\Run.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VBCommon\VBCommon.csproj">
+      <Project>{EFA81E23-0526-4DA7-9B56-046579AF86C0}</Project>
+      <Name>VBCommon</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VBProjectManager\VBProjectManager.csproj">
+      <Project>{56A96878-2E76-41B4-858A-6AAB61F99CE8}</Project>
+      <Name>VBProjectManager</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy $(TargetPath)  $(SolutionDir)\bin\Debug\$(TargetFileName)
+copy $(TargetPath) $(SolutionDir)\bin\Debug\Plugins\$(TargetFileName)
+
+copy $(SolutionDir)\Externals\Ciloci.Flee\Ciloci.Flee.dll $(SolutionDir)\bin\Debug\Plugins\Ciloci.Flee.dll
+
+copy $(SolutionDir)\Externals\DevExpress\DevExpress.Data.v11.2.dll $(SolutionDir)\bin\Debug\Plugins\DevExpress.Data.v11.2.dll
+copy $(SolutionDir)\Externals\DevExpress\DevExpress.Utils.v11.2.dll $(SolutionDir)\bin\Debug\Plugins\DevExpress.Utils.v11.2.dll
+copy $(SolutionDir)\Externals\DevExpress\DevExpress.XtraBars.v11.2.dll $(SolutionDir)\bin\Debug\Plugins\DevExpress.XtraBars.v11.2.dll
+copy $(SolutionDir)\Externals\DevExpress\DevExpress.XtraEditors.v11.2.dll $(SolutionDir)\bin\Debug\Plugins\DevExpress.XtraEditors.v11.2.dll
+
+
+copy $(SolutionDir)\Externals\DevExpress\DevExpress.Data.v11.2.dll $(SolutionDir)\bin\Debug\DevExpress.Data.v11.2.dll
+copy $(SolutionDir)\Externals\DevExpress\DevExpress.Utils.v11.2.dll $(SolutionDir)\bin\Debug\DevExpress.Utils.v11.2.dll
+copy $(SolutionDir)\Externals\DevExpress\DevExpress.XtraBars.v11.2.dll $(SolutionDir)\bin\Debug\DevExpress.XtraBars.v11.2.dll
+copy $(SolutionDir)\Externals\DevExpress\DevExpress.XtraEditors.v11.2.dll $(SolutionDir)\bin\Debug\DevExpress.XtraEditors.v11.2.dll
+
+xcopy /Y /S $(SolutionDir)\Externals\R\* $(SolutionDir)\bin\Debug\</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
